@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../../components/Footer";
 import Nav from "./Component/nav";
 
 export default function Home() {
@@ -111,6 +112,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Footer />
     </main>
     </>
   );
