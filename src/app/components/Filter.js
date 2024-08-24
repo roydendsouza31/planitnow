@@ -16,11 +16,11 @@ const Filter = () => {
             {/* Dropdown */}
             <div className="flex-shrink-0">
               <select className="bg-white/10 text-black font-semibold py-6 px-8 rounded-lg shadow-md ring-1 ring-white/10 focus:ring-2 focus:ring-indigo-500 text-2xl sm:text-lg md:text-xl lg:text-2xl">
-                <option value="photographers">Photographers/Videographers</option>
-                <option value="suppliers">Decorators</option>
-                <option value="venue-planners">Venue Planners</option>
-                <option value="aackup-artists">Mackup Artists</option>
-                <option value="designers">Designers</option>
+                <option value="photographers" href="photographers">Photographers/Videographers</option>
+                <option value="suppliers" href="suppliers">Decorators</option>
+                <option value="venue-planners" href="venue-planners">Venue Planners</option>
+                <option value="mackup-artists" href="mackup-artists">Mackup Artists</option>
+                <option value="designers"href="designers">Designers</option>
               </select>
             </div>
 
