@@ -19,7 +19,7 @@ const photographers = [
   // Add more photographers as needed
 ];
 
-const popularphotographers = () => {
+const TrendingDesigners = () => {
   const itemsPerPage = 4; // Number of photographers per page
   const totalPages = Math.ceil(photographers.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
@@ -40,7 +40,7 @@ const popularphotographers = () => {
       <div className="max-w-7xl mx-auto px-8 lg:px-10">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-5xl text-white">
-            Popular Photographers / Videographers
+            Trending Designers
           </h2>
           <button className="text-indigo-500 font-semibold hover:underline">
             View All
@@ -101,4 +101,4 @@ const popularphotographers = () => {
   );
 };
 
-export default popularphotographers;
+export default TrendingDesigners;
