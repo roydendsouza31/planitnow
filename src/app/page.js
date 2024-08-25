@@ -1,7 +1,7 @@
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Filter from "./components/Filter";
-import Seller from "./components/seller";
-import Footer from "./components/footer";
+import Seller from "./components/Seller";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
