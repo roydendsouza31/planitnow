@@ -2,7 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ClientProfile = () => {
+const ClientProfile = ({ imageSrc = '/images/defaultPerson.jpg' }) => {
+  const reviews = [
+    { id: 1, content: 'Great service, very professional.', rating: 5 },
+    { id: 2, content: 'The event was well organized and smooth.', rating: 4 },
+    { id: 3, content: 'Excellent experience, will use again.', rating: 5 }
+  ];
+
   return (
     <section className="bg-gray-900 text-white py-12 sm:py-16">
       <div className="max-w-4xl mx-auto px-4">
@@ -10,7 +16,7 @@ const ClientProfile = () => {
           {/* Profile Picture */}
           <div className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40">
             <Image
-              src="/images/defaultPerson.jpg" // Placeholder image path
+              src={imageSrc || '/images/defaultPerson.jpg'} // Use default image if imageSrc is not provided
               alt="Client Profile Picture"
               width={160}
               height={160}
@@ -68,10 +74,11 @@ const ClientProfile = () => {
           <h2 className="text-2xl font-semibold mb-4">Reviews Given</h2>
           <div className="space-y-6">
             {/* Review Cards */}
-            {[1, 2, 3].map((review, index) => (
-              <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">Review {review}</h3>
-                <p className="text-gray-400">Review content goes here.</p>
+            {reviews.map((review) => (
+              <div key={review.id} className="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-2">Review {review.id}</h3>
+                <p className="text-gray-400 mb-2">{review.content}</p>
+                <p className="text-yellow-400">Rating: {review.rating} ★</p>
               </div>
             ))}
           </div>
