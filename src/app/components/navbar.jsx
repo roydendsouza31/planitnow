@@ -1,10 +1,11 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Services', href: '#', current: false },
-  { name: 'Contact Us', href: '/contact', current: false },
+  { name: 'Contact Us', href: '#', current: false },
   { name: 'About', href: '/about', current: false },
   
 ]
@@ -54,12 +55,14 @@ export default function Navbar() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button
-  type="button"
-  className="inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold bg-blue-500 text-white shadow-sm hover:bg-white hover:text-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-4"
->
-  Sign Up
-</button>
+          <Link href="/signup">
+  <button
+    type="button"
+    className="inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold bg-blue-500 text-white shadow-sm hover:bg-white hover:text-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-4"
+  >
+    Sign Up
+  </button>
+</Link>
 
 
             {/* Profile dropdown */}
