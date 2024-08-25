@@ -14,7 +14,7 @@ const Seller = () => {
     <section className="relative bg-gray-800 py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="text-left mb-8">
-          <h2 className="text-5xl font-bold text-white">
+          <h2 className="text-5xl text-white">
             Seller Categories
           </h2>
         </div>
