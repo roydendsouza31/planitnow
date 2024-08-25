@@ -1,11 +1,11 @@
 
 'use client'
-
+import Link from 'next/link';
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 
-export default function Example() {
+export default function Signup() {
   const [agreed, setAgreed] = useState(false)
 
   return (
@@ -132,7 +132,7 @@ export default function Example() {
           </div>
           
           
-          <Field className="flex gap-x-4 sm:col-span-2">
+          {/* <Field className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
                 checked={agreed}
@@ -153,8 +153,17 @@ export default function Example() {
               </a>
               .
             </Label>
-          </Field>
+          </Field> */}
+
         </div>
+        <div>
+      <p className="text-sm leading-6 text-gray-600 mt-4">
+        Already Have an Account?{' '}
+        <Link href="/login" className="text-blue-600 hover:underline">
+          Sign In
+        </Link>
+      </p>
+    </div>
         <div className="mt-10">
           <button
             type="submit"
