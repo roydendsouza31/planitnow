@@ -6,7 +6,7 @@ const Filter = () => {
       <div className="mx-auto max-w-7xl px-8 lg:px-10">
         <div className="text-center">
           <h1 className="text-7xl font-bold text-white pt-10 sm:text-8xl">
-            Welcome to PlanItNow
+            Welcome to Plan It Now
           </h1>
           <p className="mt-8 text-3xl leading-10 text-gray-300">
             Your one-stop solution for all your event planning needs.
@@ -19,7 +19,7 @@ const Filter = () => {
                 <option value="photographers" href="photographers">Photographers/Videographers</option>
                 <option value="suppliers" href="suppliers">Decorators</option>
                 <option value="venue-planners" href="venue-planners">Venue Planners</option>
-                <option value="mackup-artists" href="mackup-artists">Mackup Artists</option>
+                <option value="mackup-artists" href="mackup-artists">Makeup Artists</option>
                 <option value="designers"href="designers">Designers</option>
               </select>
             </div>

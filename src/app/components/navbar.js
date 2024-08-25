@@ -13,7 +13,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav() {
+export default function Navbar() {
   return (
     <Disclosure as="nav">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
