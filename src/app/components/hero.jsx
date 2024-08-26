@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-900 text-white py-24 sm:py-32 lg:py-40">
+    <section className="relative bg-gray-950 text-white py-24 sm:py-32 lg:py-40">
       <div className="max-w-7xl mx-auto px-8 lg:px-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
           Welcome to Plan It Now

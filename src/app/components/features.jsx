@@ -9,7 +9,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="bg-gray-800 text-white py-24 sm:py-32 lg:py-40">
+    <section className="bg-gray-900 text-white py-24 sm:py-32 lg:py-40">
       <div className="max-w-7xl mx-auto px-8 lg:px-10 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-12">
           Why Choose Us?
